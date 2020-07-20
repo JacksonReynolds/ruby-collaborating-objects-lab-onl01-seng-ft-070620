@@ -17,7 +17,7 @@ class MP3Importer
       file.slice('.mp3')
       file
     end #do
-    binding.pry
+    # binding.pry
   end #files
 
   def import
