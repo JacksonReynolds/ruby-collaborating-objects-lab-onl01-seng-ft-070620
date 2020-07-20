@@ -1,5 +1,6 @@
-
-
+require 'artist.rb'
+require 'song.rb'
+require 'pry'
 
 class MP3Importer
 
