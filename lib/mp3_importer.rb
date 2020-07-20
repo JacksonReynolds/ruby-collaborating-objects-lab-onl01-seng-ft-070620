@@ -10,7 +10,7 @@ class MP3Importer
   end #initialize
 
   def files
-    files = self.path.load
+    files = Dir[self.path]
   end #files
 
   def import
