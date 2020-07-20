@@ -14,8 +14,8 @@ class MP3Importer
     files = Dir[self.path+'/*.mp3'].collect do |file|
       binding.pry
       file.slice!(self.path+'/')
-      file.slice!('.mp3')
-      file
+      # # file.slice!('.mp3')
+      # file
     end #do
     # binding.pry
   end #files
