@@ -12,7 +12,7 @@ class MP3Importer
 
   def files
     files = Dir[self.path+'/*.mp3'].collect do |file|
-      file.delete(self.path).delete('.mp3')
+      file.slice(self.path)
     end #do
     binding.pry
   end #files
