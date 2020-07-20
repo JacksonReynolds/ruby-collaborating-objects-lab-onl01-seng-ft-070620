@@ -15,7 +15,7 @@ class MP3Importer
       # binding.pry
       file.slice!(self.path+'/')
       # # file.slice!('.mp3')
-      # file
+      file
     end #do
     # binding.pry
   end #files
