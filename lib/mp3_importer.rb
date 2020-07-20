@@ -12,16 +12,14 @@ class MP3Importer
 
   def files
     files = Dir[self.path+'/*.mp3'].collect do |file|
-      # binding.pry
       file.slice!(self.path+'/')
-      # # file.slice!('.mp3')
       file
     end #do
     # binding.pry
   end #files
 
   def import
-
+    files.each {|file| Song.new_by_filename(file)}
   end #import
 
 end #MP3Importer
