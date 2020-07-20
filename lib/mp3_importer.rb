@@ -11,7 +11,7 @@ class MP3Importer
   end #initialize
 
   def files
-    files = Dir[self.path]
+    files = Dir[self.path+'/*']
     binding.pry
   end #files
 
