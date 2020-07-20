@@ -11,6 +11,7 @@ class MP3Importer
 
   def files
     files = Dir[self.path]
+    binding.pry
   end #files
 
   def import
